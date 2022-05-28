@@ -23,7 +23,7 @@ BST<std::string> makeTree(const char* filename) {
       }
       if (t >= 'A') {
           if (t <= 'Z') {
-              t = t + 32
+              t = t + 32;
           }
       } else {
           derevo.Add(word);
@@ -31,5 +31,5 @@ BST<std::string> makeTree(const char* filename) {
       }
   }
   fin.close();
-  return Drevo;
+  return derevo;
 }
