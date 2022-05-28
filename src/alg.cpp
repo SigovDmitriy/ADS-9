@@ -12,7 +12,7 @@ BST<std::string> makeTree(const char* filename) {
   std::string word = "";
   if (!fin.is_open()) {
       std::cout << "Error! File can't be open!" << std::endl;
-      return Drevo;
+      return derevo;
   }
   while (!fin.eof()) {
       t = fin.get();
