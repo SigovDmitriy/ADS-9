@@ -18,7 +18,7 @@ BST<std::string> makeTree(const char* filename) {
       t = fin.get();
       if (t >= 'A') {
           if (t <= 'Z') {
-              word = word + t;
+              t = t + 32;
           }
       }
       if (t >= 'a') {
