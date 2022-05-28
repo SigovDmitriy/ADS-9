@@ -16,14 +16,14 @@ BST<std::string> makeTree(const char* filename) {
   }
   while (!fin.eof()) {
       t = fin.get();
-      if (t >= 'a') {
-          if (t <= 'z') {
+      if (t >= 'A') {
+          if (t <= 'Z') {
               word = word + t;
           }
       }
-      if (t >= 'A') {
-          if (t <= 'Z') {
-              t = t + 32;
+      if (t >= 'a') {
+          if (t <= 'z') {
+              word = word + t;
           }
       } else {
           derevo.Add(word);
